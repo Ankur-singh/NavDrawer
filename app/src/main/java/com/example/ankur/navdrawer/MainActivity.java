@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         //fragment initially
-        main Fragment = new main();
+        fragment_main Fragment = new fragment_main();
         android.support.v4.app.FragmentTransaction fragmentTransaction =
                 getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frameContainer, Fragment);
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
-            main Fragment = new main();
+            fragment_main Fragment = new fragment_main();
             android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frameContainer, Fragment);
